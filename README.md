@@ -15,7 +15,7 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 - Create Blog posts from Netlify CMS
 - Tags: Separate page for posts under each tag
 - Basic directory organization
-- Uses Bulma for styling, but size is reduced by `purge-css-plugin`
+<!-- - Uses Bulma for styling, but size is reduced by `purge-css-plugin` -->
 - Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
 - Uses `gatsby-image` with Netlify-CMS preview support
 - Separate components for everything
