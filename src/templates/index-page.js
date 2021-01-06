@@ -15,38 +15,36 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div>
-    <h1>{title}</h1>
-    <h2>{subheading}</h2>
-
-    <section>
+  <section>
+    <div className="bg-secondary text-white py-3 mb-5">
       <div className="container">
-        <h1 className="title">{mainpitch.title}</h1>
-        <h3 className="subtitle">{mainpitch.description}</h3>
+        <h1>{title}</h1>
+        <h2>{subheading}</h2>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <div className="container">
-        <Features gridItems={intro.blurbs} />
-        <Link className="btn" to="/products">
-          See all products
-        </Link>
-      </div>
-    </section>
+    <div className="container">
+      <h1 className="title">{mainpitch.title}</h1>
+      <h3 className="subtitle">{mainpitch.description}</h3>
+    </div>
 
-    <section>
-      <div className="container">
-        <h3 className="has-text-weight-semibold is-size-2">
-          Latest stories
-        </h3>
-        <BlogRoll />
-        <Link className="btn" to="/blog">
-          Read more
-        </Link>
-      </div>
-    </section>
-  </div>
+    <div className="container">
+      <Features gridItems={intro.blurbs} />
+      <Link className="btn" to="/products">
+        See all products
+      </Link>
+    </div>
+
+    <div className="container">
+      <h3 className="has-text-weight-semibold is-size-2">
+        Latest stories
+      </h3>
+      <BlogRoll />
+      <Link className="btn" to="/blog">
+        Read more
+      </Link>
+    </div>
+  </section>
 )
 
 IndexPageTemplate.propTypes = {
